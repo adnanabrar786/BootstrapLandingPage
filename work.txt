@@ -25,7 +25,7 @@ Live Link >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 https://stirring-beijinho-53ed55.netlify.app/
 
 
-card
+
 navbar
 hover
 Link
