@@ -1,77 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!--Get your code at fontawesome.com-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
 
-        .bac_image {
-            background-image: url("./images/banner.webp");
-            min-height: 400px;
-            max-height: auto;
-            background-color: #F8F8F8;
-            /* background-position: center; */
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-        }
+      .bac_image {
+        background-image: url("./images/banner.webp");
+        min-height: 400px;
+        max-height: auto;
+        background-color: #f8f8f8;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
 
+      .banner_text {
+        font-size: 45px;
+        padding-left: 20%;
+      }
+
+      .card_hover {
+        background-color: #ffffff;
+      }
+
+      .card_hover:hover {
+        cursor: pointer;
+        background-color: #4081c6;
+      }
+      /* .card_hover:hover > div {
+            color: #ffffff;
+        } */
+
+      .card_hover h5 {
+        color: #ffffff;
+        color: #4081c6;
+      }
+
+      .card_hover:hover > h5 {
+        color: #ffffff;
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+
+      .footer-hover {
+        color: #bcc3c9;
+      }
+
+      .footer-hover:hover {
+        color: #ffffff;
+      }
+
+      .underline_hover:hover {
+        cursor: pointer;
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      @media only screen and (max-width: 992px) {
         .banner_text {
-            font-size: 45px;
-            padding-left: 20%;
+          font-size: 35px;
+          padding-left: 5%;
         }
 
-        .cursor-pointer {
-            cursor: pointer;
+        .display_none {
+          display: none;
         }
-
-        .footer-hover {
-            color: #bcc3c9;
-        }
-
-        .footer-hover:hover {
-            color: #ffffff;
-        }
-
-        .underline_hover:hover {
-            cursor: pointer;
-            color: #ffffff;
-            text-decoration: underline;
-        }
-
-        @media only screen and (max-width: 992px) {
-            .banner_text {
-                font-size: 35px;
-                padding-left: 5%;
-            }
-
-            .display_none {
-                display: none;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <section class="d-flex justify-content-start text-left bac_image text-center shadow-1-strong text-white"
-        style="background-image: url('https://csi.imgix.net/banners/Fabrication-banner.jpg?auto=compress%2Cformat&crop=focalpoint&domain=csi.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=1060&ixlib=php-3.3.1&w=2560&s=70a5daf1c6360c8286796207ee08e9bb');">
-        <div class="col-lg-6 col-md-6 col-sm-10 col-11 pt-lg-2 pt-md-2 pt-sm-1 pt-2">
-            <p class="lg-mt-5 lg-mt-4 lg-mt-2 mt-5 pt-4 font-weight-bold banner_text text-left">
-                Fabrication recognizes unique needs to produce a
-                custom solution
-            </p>
-        </div>
+  <body>
+    <section
+      class="d-flex justify-content-start text-left bac_image text-center shadow-1-strong text-white"
+      style="
+        background-image: url('https://csi.imgix.net/banners/Fabrication-banner.jpg?auto=compress%2Cformat&crop=focalpoint&domain=csi.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=1060&ixlib=php-3.3.1&w=2560&s=70a5daf1c6360c8286796207ee08e9bb');
+      "
+    >
+      <div
+        class="col-lg-6 col-md-6 col-sm-10 col-11 pt-lg-2 pt-md-2 pt-sm-1 pt-2"
+      >
+        <p
+          class="lg-mt-5 lg-mt-4 lg-mt-2 mt-5 pt-4 font-weight-bold banner_text text-left"
+        >
+          Fabrication recognizes unique needs to produce a custom solution
+        </p>
+      </div>
     </section>
     <!--     
     <header class="d-flex justify-content-center" style="background-color: #EDF0F2; border-top:7px solid #4081C6;">
@@ -87,743 +124,1159 @@
         </div>
     </header> -->
 
-
-    <section class="py-5" style="background-color: #F8F8F8;">
-        <h3 style="letter-spacing: 1px;" class="px-2 text-center font-weight-light" style="color: #3C3F42;">FABRICATION
-            CAPABILITIES</h3>
-        <div class="container mt-5 text-center">
-
-            <div class="row">
-                <div class="col-xl-3 col-log-3 col-md-6 col-sm-12 col-12">
-                    <div class="card border border-0 rounded">
-                        <div class="mt-xl-0 mt-lg-0 mt-2 mx-1  py-4 rounded" style="background-color: #ffffff;">
-                            <div><img class="col-4" src="./images/welding.png" alt="pic"></div>
-                            <h5 class="mt-3" style="color: #4081C6;">Welding</h5>
-                        </div>
-                    </div>
+    <section class="py-5" style="background-color: #f8f8f8">
+      <h3
+        style="letter-spacing: 1px"
+        class="px-2 text-center font-weight-light"
+        style="color: #3c3f42"
+      >
+        FABRICATION CAPABILITIES
+      </h3>
+      <div class="container mt-5 text-center">
+        <div class="row">
+          <div class="col-xl-3 col-log-3 col-md-6 col-sm-12 col-12">
+            <div class="card border border-0 rounded">
+              <div class="mt-xl-0 mt-lg-0 mt-2 mx-1 py-4 rounded card_hover">
+                <div>
+                  <img class="col-4" src="./images/welding.png" alt="pic" />
                 </div>
-
-                <div class="col-xl-3 col-log-3 col-md-6 col-sm-12 col-12">
-                    <div class="card border border-0 rounded">
-                        <div class="mt-xl-0 mt-lg-0 mt-2 mx-1  py-4 rounded" style="background-color: #ffffff;">
-                            <div><img class="col-4" src="./images/machine.png" alt="pic"></div>
-                            <h5 class="mt-3" style="color: #4081C6;">Machining</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-log-3 col-md-6 col-sm-12 col-12">
-                    <div class="card border border-0 rounded">
-                        <div class="mt-xl-0 mt-lg-0 mt-2 mx-1  py-4 rounded" style="background-color: #ffffff;">
-                            <div><img class="col-4" src="./images/finishing.png" alt="pic"></div>
-                            <h5 class="mt-3" style="color: #4081C6;">Finishing</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-log-3 col-md-6 col-sm-12 col-12">
-                    <div class="card border border-0 rounded">
-                        <div class="mt-xl-0 mt-lg-0 mt-2 mx-1  py-4 rounded" style="background-color: #ffffff;">
-                            <div><img class="col-4" src="./images/inspection.png" alt="pic"></div>
-                            <h5 class="mt-3" style="color: #4081C6;">Inspection</h5>
-                        </div>
-                    </div>
-                </div>
+                <h5 class="mt-3">Welding</h5>
+              </div>
             </div>
-            <div>
+          </div>
 
-
+          <div class="col-xl-3 col-log-3 col-md-6 col-sm-12 col-12">
+            <div class="card border border-0 rounded">
+              <div class="mt-xl-0 mt-lg-0 mt-2 mx-1 py-4 rounded card_hover">
+                <div>
+                  <img class="col-4" src="./images/machine.png" alt="pic" />
+                </div>
+                <h5 class="mt-3">Machining</h5>
+              </div>
             </div>
+          </div>
+
+          <div class="col-xl-3 col-log-3 col-md-6 col-sm-12 col-12">
+            <div class="card border border-0 rounded">
+              <div class="mt-xl-0 mt-lg-0 mt-2 mx-1 py-4 rounded card_hover">
+                <div>
+                  <img class="col-4" src="./images/finishing.png" alt="pic" />
+                </div>
+                <h5 class="mt-3">Finishing</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-log-3 col-md-6 col-sm-12 col-12">
+            <div class="card border border-0 rounded">
+              <div class="mt-xl-0 mt-lg-0 mt-2 mx-1 py-4 rounded card_hover">
+                <div>
+                  <img class="col-4" src="./images/inspection.png" alt="pic" />
+                </div>
+                <h5 class="mt-3">Inspection</h5>
+              </div>
+            </div>
+          </div>
         </div>
+        <div></div>
+      </div>
     </section>
 
     <section class="container pt-5 pd-xl-5 pd-lg-5 pb-2">
-        <div class="row text-center">
-            <div class="col-xl-2 col-lg-2 col-12">
-                <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/CSI-Customer-Reviews-Icon.png" alt="logo">
-            </div>
-            <div class="col-xl-10 col-lg-10 col-12">
-                <p class="text-xl-left text-lg-left text-center h5"
-                    style="line-height: 30px; font-weight: 400; color: #4081C6;">
-                    Central States Industrial is a step above other material suppliers I have worked with in the
-                    pharmaceutical materials supply industry due to their thorough understanding of the documentation
-                    required to certify equipment for use in product contact applications. In addition, the technical
-                    knowledge of their staff will take the time necessary to work with their customer and provide a the
-                    correct solution to fit a specific need.
-                </p>
-                <p class="text-xl-left text-lg-left text-center">
-                    - Clark Patterson, Owner and President of LotterBhanson, LLC
-                </p>
-            </div>
+      <div class="row text-center">
+        <div class="col-xl-2 col-lg-2 col-12">
+          <img
+            src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/CSI-Customer-Reviews-Icon.png"
+            alt="logo"
+          />
         </div>
-        <div class="container">
-            <p class="col-12 h5 font-weight-normal" style="color: #3C3F42; line-height: 30px;">
-                For over 40 years, Central States Industrial (CSI) has delivered customer-focused fabrication solutions
-                for <span style="color: #4081C6;"> transfer panels, utility panels, skids, custom fittings, valve
-                    manifolds</span> — and the
-                entire complement
-                of CSI manufacturing capabilities.
-            </p>
+        <div class="col-xl-10 col-lg-10 col-12">
+          <p
+            class="text-xl-left text-lg-left text-center h5"
+            style="line-height: 30px; font-weight: 400; color: #4081c6"
+          >
+            Central States Industrial is a step above other material suppliers I
+            have worked with in the pharmaceutical materials supply industry due
+            to their thorough understanding of the documentation required to
+            certify equipment for use in product contact applications. In
+            addition, the technical knowledge of their staff will take the time
+            necessary to work with their customer and provide a the correct
+            solution to fit a specific need.
+          </p>
+          <p class="text-xl-left text-lg-left text-center">
+            - Clark Patterson, Owner and President of LotterBhanson, LLC
+          </p>
         </div>
+      </div>
+      <div class="container p-0">
+        <div
+          class="col-12 h5 font-weight-normal"
+          style="color: #3c3f42; line-height: 30px"
+        >
+          For over 40 years, Central States Industrial (CSI) has delivered
+          customer-focused fabrication solutions for
+          <!-- <span style="color: #4081c6"> -->
+          <a href="https://www.csidesigns.com/custom-equipment/transfer-panel"
+            >ransfer panels</a
+          >,
+          <a
+            href="https://www.csidesigns.com/custom-equipment/utility-stations"
+          >
+            utility panels
+          </a>
+          <a href="https://www.csidesigns.com/custom-equipment/process-skids">
+            skids</a
+          >,
+          <a href="https://www.csidesigns.com/custom-equipment/custom-fittings">
+            custom fittings</a
+          >,
+          <a href="https://www.csidesigns.com/custom-equipment/valve-manifolds"
+            >valve manifolds</a
+          >
+          <!-- transfer panels, utility panels, skids, custom fittings, valve
+            manifolds -->
+          <!-- </span
+          > -->
+          — and the entire complement of CSI manufacturing capabilities.
+        </div>
+      </div>
     </section>
 
     <!-- WELDING -->
     <section class="mt-xl-5 mt-lg-5 mt-3 container pb-3">
-        <h1 style="color: #4081C6;" class="font-weight-light">WELDING</h1>
-        <p style="color: #3C3F42;">
-            Our welder's extensive knowledge and expertise working with these materials allow customers to achieve the
-            highest caliber results in their products, and our machinists utilize CNC lathe and mill capabilities to
-            ensure your products consistently meet industry standards.
-        </p>
-        <div>
-            <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/csi-welding-capabilities-header.jpg" alt=""
-                style="width: 100%;">
-        </div>
+      <h1 style="color: #4081c6" class="font-weight-light">WELDING</h1>
+      <p style="color: #3c3f42">
+        Our welder's extensive knowledge and expertise working with these
+        materials allow customers to achieve the highest caliber results in
+        their products, and our machinists utilize CNC lathe and mill
+        capabilities to ensure your products consistently meet industry
+        standards.
+      </p>
+      <div>
+        <img
+          src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/csi-welding-capabilities-header.jpg"
+          alt=""
+          style="width: 100%"
+        />
+      </div>
 
+      <div
+        class="mt-xl-5 mt-lg-5 mt-3 d-flex justify-content-center flex-xl-row flex-lg-column flex-column text-center"
+      >
+        <div class="text-left pr-4">
+          <h4 style="color: #3c3f42" class="font-weight-normal">
+            UNIQUE WELDING STATION DESIGN
+          </h4>
+          <p style="color: #3c3f42" class="mt-3">
+            To increase efficiency in CSI's shop, welding gases, compressed air,
+            and cooling water are piped to each welding station. The stations
+            can run four argon regulators and one mixed gas regulator at a time.
+            CSI uses stainless steel to
+            <a href="https://www.csidesigns.com/blog/articles/pipe-fabrication"
+              >pipe</a
+            >
+            the welding gases from the liquid source, further enhancing the
+            quality of fabrication.
+          </p>
+        </div>
+        <div class="text-left pr-4">
+          <h4 style="color: #3c3f42" class="font-weight-normal">
+            LEADING WELDING TECHNOLOGY
+          </h4>
+          <p style="color: #3c3f42" class="mt-3">
+            CSI combines welding skills with the latest welding technology to
+            produce industry-leading weld quality. With the latest in orbital
+            welding equipment technology and manual TIG welding capabilities,
+            CSI craftspeople take pride in their workmanship and ownership of
+            every project that is worked on.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-xl-4 mt-xl-4 mt-lg-4 mt-2 row text-center">
         <div
-            class="mt-xl-5 mt-lg-5 mt-3 d-flex justify-content-center flex-xl-row flex-lg-column flex-column text-center">
-            <div class="text-left pr-4">
-                <h4 style="color: #3C3F42;" class="font-weight-normal">
-                    UNIQUE WELDING STATION DESIGN
-                </h4>
-                <p style="color: #3C3F42;" class="mt-3">
-                    To increase efficiency in CSI's shop, welding gases, compressed air, and cooling water are piped to
-                    each welding station. The stations can run four argon regulators and one mixed gas regulator at a
-                    time. CSI uses stainless steel to pipe the welding gases from the liquid source, further enhancing
-                    the quality of fabrication.
-                </p>
-            </div>
-            <div class="text-left pr-4">
-                <h4 style="color: #3C3F42;" class="font-weight-normal">
-                    LEADING WELDING TECHNOLOGY
-                </h4>
-                <p style="color: #3C3F42;" class="mt-3">
-                    CSI combines welding skills with the latest welding technology to produce industry-leading weld
-                    quality. With the latest in orbital welding equipment technology and manual TIG welding
-                    capabilities, CSI craftspeople take pride in their workmanship and ownership of every project that
-                    is worked on.
-                </p>
-            </div>
+          class="col-xl-6 col-lg-6 col-12 d-flex flex-column justify-content-center text-center"
+        >
+          <h4 style="color: #3c3f42" class="text-left font-weight-normal">
+            PRECISION LATHE WELDING
+          </h4>
+          <p style="color: #3c3f42" class="text-left">
+            We utilize the latest lathe welding technology to produce precise,
+            repeatable weld results on a wide range of circumferential parts.
+            This machine optimizes our process and improves weld quality, all
+            while reducing costs..
+          </p>
         </div>
-
-        <div class="mt-xl-4 mt-xl-4 mt-lg-4 mt-2 row text-center">
-            <div class="col-xl-6 col-lg-6 col-12 d-flex flex-column justify-content-center text-center">
-                <h4 style="color: #3C3F42;" class="text-left font-weight-normal">PRECISION LATHE WELDING</h4>
-                <p style="color: #3C3F42;" class="text-left">
-                    We utilize the latest lathe welding technology to produce precise, repeatable weld results on a wide
-                    range of circumferential parts. This machine optimizes our process and improves weld quality, all
-                    while reducing costs..
-                </p>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-12">
-                <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/precision-lathe-welder.jpg"
-                    style="width: 100%;" alt="pic">
-            </div>
+        <div class="col-xl-6 col-lg-6 col-12">
+          <img
+            src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/precision-lathe-welder.jpg"
+            style="width: 100%"
+            alt="pic"
+          />
         </div>
-
+      </div>
     </section>
 
     <section class="container mt-xl-5 mt-lg-5 mt-2">
-        <div class="d-flex flex-lg-row dlex-lg-row flex-column" style="background-color: #3C3F42; color: #ffffff;">
-            <div class="col-xl-6 col-lg-6 col-12 text-left py-xl-5 py-lg-5 py-3 pl-xl-5 pl-lg-5 pl-4">
-                <h3 class="col-11 font-weight-light" style="color: #C1C1C1;">
-                    WELDING EXPERIENCE & CERTIFICATIONS
-                </h3>
-                <p class="col-11">
-                    CSI's vast welding experience meets every individual's unique quality requirements, ensuring success
-                    of every project.
-                </p>
-                <ul class="col-11">
-                    <li>
-                        Material handling, fabrication, and inspection adhere to FDA’s cGMP regulations for high purity
-                        products
-                    </li>
-                    <li>
-                        ASME section IX certified welders for light wall sanitary tube and fittings
-                    </li>
-                    <li>
-                        ASME Section IX certified welders for manual GTAW/TIG and automatic orbital welding
-                    </li>
-                    <li>
-                        Welds meet or exceed the 3-A and ASME-BPE requirements
-                    </li>
-                </ul>
-            </div>
-            <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/CSI-Orbital-Welding-Capabilities.jpg"
-                class="col-xl-6 col-lg-6 col-12 p-0 w-100" alt="">
+      <div
+        class="d-flex flex-lg-row dlex-lg-row flex-column"
+        style="background-color: #3c3f42; color: #ffffff"
+      >
+        <div
+          class="col-xl-6 col-lg-6 col-12 text-left py-xl-5 py-lg-5 py-3 pl-xl-5 pl-lg-5 pl-4"
+        >
+          <h3 class="col-11 font-weight-light" style="color: #c1c1c1">
+            WELDING EXPERIENCE & CERTIFICATIONS
+          </h3>
+          <p class="col-11">
+            CSI's vast welding experience meets every individual's unique
+            quality requirements, ensuring success of every project.
+          </p>
+          <ul class="col-11">
+            <li>
+              Material handling, fabrication, and inspection adhere to FDA’s
+              cGMP regulations for high purity products
+            </li>
+            <li>
+              ASME section IX certified welders for light wall sanitary tube and
+              fittings
+            </li>
+            <li>
+              ASME Section IX certified welders for manual GTAW/TIG and
+              automatic orbital welding
+            </li>
+            <li>Welds meet or exceed the 3-A and ASME-BPE requirements</li>
+          </ul>
         </div>
-        <div class="py-4 col-12 d-flex flex-xl-row flex-lg-row flex-column text-center align-items-center justify-content-center align-content-center align-items-center"
-            style="background-color: #EDF0F2;">
-            <h4 class="my-2 font-weight-lighter" style="color: #333333;">
-                <img class="pr-2" src="./images/setting.png" alt="icon">
-                Learn more about how CSI can help you.
-            </h4>
-            <button class="my-2 ml-5 border-primary bg-primary py-2 px-4 rounded" style="color:#ffffff;">
-                <a href="/" class="text-decoration-none  text-white">Contact Us</a>
+        <img
+          src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/CSI-Orbital-Welding-Capabilities.jpg"
+          class="col-xl-6 col-lg-6 col-12 p-0 w-100"
+          alt=""
+        />
+      </div>
+      <div
+        class="py-4 col-12 d-flex flex-xl-row flex-lg-row flex-column text-center align-items-center justify-content-center align-content-center align-items-center"
+        style="background-color: #edf0f2"
+      >
+        <h4 class="my-2 font-weight-lighter" style="color: #333333">
+          <img class="pr-2" src="./images/setting.png" alt="icon" />
+          Learn more about how CSI can help you.
+        </h4>
+
+        <div class="my-xl-2 my-lg-2 my-0 ml-xl-5 ml-lg-5 ml-0">
+          <a
+            href="https://www.csidesigns.com/contact"
+            class="text-decoration-none"
+          >
+            <button type="button" class="btn btn-outline-primary py-2 px-4">
+              Contact Us
             </button>
+          </a>
         </div>
+
+        <!-- <button
+          type="button"
+          class="my-xl-2 my-lg-2 my-0 ml-xl-5 ml-lg-5 ml-0 btn btn-outline-primary py-2 px-4"
+        >
+          <a
+            href="https://www.csidesigns.com/contact"
+            class="text-decoration-none"
+            >Contact Us</a
+          >
+        </button> -->
+        <!-- <button
+          class="my-2 ml-5 border-primary bg-primary  rounded"
+          style="color: #ffffff"
+        >
+          <a href="/" class="text-decoration-none text-white">Contact Us</a>
+        </button> -->
+      </div>
     </section>
 
     <!-- machine -->
     <section class="mt-xl-5 mt-lg-5 mt-3 container pb-3">
-        <h1 style="color: #4081C6;" class="font-weight-light">MACHINING</h1>
-        <p style="color: #3C3F42;">
-            Machinists at Central States Industrial (CSI) ensure your products consistently meet industry standards.
-            With our CNC lathe and mill capabilities, we are leaders in the manufacturing of fittings in sanitary
-            stainless steels as well as AL-6XN and Hastelloy C-22.
-        </p>
-        <div>
-            <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/Machining-page-banner.jpg" alt=""
-                style="width: 100%;">
-        </div>
+      <h1 style="color: #4081c6" class="font-weight-light">MACHINING</h1>
+      <p style="color: #3c3f42">
+        Machinists at Central States Industrial (CSI) ensure your products
+        consistently meet industry standards. With our CNC lathe and mill
+        capabilities, we are leaders in the manufacturing of fittings in
+        sanitary stainless steels as well as AL-6XN and Hastelloy C-22.
+      </p>
+      <div>
+        <img
+          src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/Machining-page-banner.jpg"
+          alt=""
+          style="width: 100%"
+        />
+      </div>
 
+      <div
+        class="mt-xl-5 mt-lg-5 mt-3 d-flex justify-content-center flex-xl-row flex-lg-column flex-column text-center"
+      >
+        <div class="text-left pr-4">
+          <h4 style="color: #3c3f42" class="font-weight-normal">
+            STANDARDS AND TOLERANCES
+          </h4>
+          <p style="color: #3c3f42" class="mt-3">
+            At CSI, manufacturing methods comply with the latest industry
+            standards. We are actively involved in the committees that write the
+            standards for the industries we serve. As a result, we have a deep
+            understanding of industry standards, allowing us to consistently
+            meet the tolerance requirements for your components.
+          </p>
+        </div>
+        <div class="text-left pr-4">
+          <h4 style="color: #3c3f42" class="font-weight-normal">
+            MACHINING TRANSFER PANELS
+          </h4>
+          <p style="color: #3c3f42" class="mt-3">
+            When manufacturing
+            <a href="https://www.csidesigns.com/custom-equipment/transfer-panel"
+              >transfer panels</a
+            >, our machinists use a precision machining process to bore ports
+            through 1/4 inch (or thicker) polished plates. This ensures
+            tolerances meet or exceed industry standards for proper jumper
+            fit-up and leak-free design.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-xl-4 mt-xl-4 mt-lg-4 mt-2 row text-center">
         <div
-            class="mt-xl-5 mt-lg-5 mt-3 d-flex justify-content-center flex-xl-row flex-lg-column flex-column text-center">
-            <div class="text-left pr-4">
-                <h4 style="color: #3C3F42;" class="font-weight-normal">
-                    STANDARDS AND TOLERANCES
-                </h4>
-                <p style="color: #3C3F42;" class="mt-3">
-                    At CSI, manufacturing methods comply with the latest industry standards. We are actively involved in
-                    the committees that write the standards for the industries we serve. As a result, we have a deep
-                    understanding of industry standards, allowing us to consistently meet the tolerance requirements for
-                    your components.
-                </p>
-            </div>
-            <div class="text-left pr-4">
-                <h4 style="color: #3C3F42;" class="font-weight-normal">
-                    MACHINING TRANSFER PANELS
-                </h4>
-                <p style="color: #3C3F42;" class="mt-3">
-                    When manufacturing transfer panels, our machinists use a precision machining process to bore ports
-                    through 1/4 inch (or thicker) polished plates. This ensures tolerances meet or exceed industry
-                    standards for proper jumper fit-up and leak-free design.
-                </p>
-            </div>
+          class="col-xl-6 col-lg-6 col-12 d-flex flex-column justify-content-center text-center"
+        >
+          <h4 style="color: #3c3f42" class="text-left font-weight-normal">
+            CUSTOM-MACHINED FITTINGS
+          </h4>
+          <p style="color: #3c3f42" class="text-left">
+            We like challenges at CSI. Our experts take an "outside-the-box"
+            approach when developing designs for custom machined components. Let
+            us take on your next challenge.
+          </p>
+          <div class="text-xl-left text-lg-left text-center">
+            <a
+              href="https://www.csidesigns.com/custom-equipment/custom-fittings"
+              class="text-decoration-none"
+            >
+              <button type="button" class="btn btn-outline-danger py-2 px-4">
+                View Custom Fitting
+              </button>
+            </a>
+          </div>
+          <!-- <div class="text-xl-left text-lg-left text-center">
+            <button
+              type="button"
+              class="py-3 px-5 font-weight-bold btn btn-outline-danger"
+            >
+              View Custom Fitting
+            </button>
+          </div> -->
         </div>
-
-        <div class="mt-xl-4 mt-xl-4 mt-lg-4 mt-2 row text-center">
-            <div class="col-xl-6 col-lg-6 col-12 d-flex flex-column justify-content-center text-center">
-                <h4 style="color: #3C3F42;" class="text-left font-weight-normal">CUSTOM-MACHINED FITTINGS</h4>
-                <p style="color: #3C3F42;" class="text-left">
-                    We like challenges at CSI. Our experts take an "outside-the-box" approach when developing designs
-                    for custom machined components. Let us take on your next challenge.
-                </p>
-                <div class="text-xl-left text-lg-left text-center">
-                    <button type="button" class="py-3 px-5 font-weight-bold btn btn-outline-danger">View Custom
-                        Fitting</button>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-12 mt-xl-0 mt-lg-0 mt-4">
-                <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/custom-fittings-smaller.png"
-                    style="width: 100%;" alt="pic">
-            </div>
+        <div class="col-xl-6 col-lg-6 col-12 mt-xl-0 mt-lg-0 mt-4">
+          <img
+            src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/custom-fittings-smaller.png"
+            style="width: 100%"
+            alt="pic"
+          />
         </div>
-
+      </div>
     </section>
 
     <section class="container mt-xl-5 mt-lg-5 mt-2">
-        <div class="d-flex flex-lg-row dlex-lg-row flex-column" style="background-color: #3C3F42; color: #ffffff;">
-            <div class="col-xl-6 col-lg-6 col-12 text-left py-xl-5 py-lg-5 py-3 pl-xl-5 pl-lg-5 pl-4">
-                <h3 class="col-11 font-weight-light" style="color: #C1C1C1;">
-                    SUPERIOR MACHINING EQUIPMENT
-                </h3>
-                <p class="col-11">
-                    At CSI, we utilize equipment to meet the needs of the sanitary processing industry.
-                </p>
-                <ul class="col-11">
-                    <li>
-                        Computer numerically controlled (CNC) & manual lathes
-                    </li>
-                    <li>
-                        CNC & manual mills
-                    </li>
-                    <li>
-                        Auto band saw
-                    </li>
-                    <li>
-                        Finishing equipment
-                    </li>
-                    <li>
-                        Various inspection tools to verify dimensions and tolerances
-                    </li>
-                </ul>
-            </div>
-            <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/al6xn-machining.jpg"
-                class="col-xl-6 col-lg-6 col-12 p-0 w-100" alt="">
+      <div
+        class="d-flex flex-lg-row dlex-lg-row flex-column"
+        style="background-color: #3c3f42; color: #ffffff"
+      >
+        <div
+          class="col-xl-6 col-lg-6 col-12 text-left py-xl-5 py-lg-5 py-3 pl-xl-5 pl-lg-5 pl-4"
+        >
+          <h3 class="col-11 font-weight-light" style="color: #c1c1c1">
+            SUPERIOR MACHINING EQUIPMENT
+          </h3>
+          <p class="col-11">
+            At CSI, we utilize equipment to meet the needs of the sanitary
+            processing industry.
+          </p>
+          <ul class="col-11">
+            <li>Computer numerically controlled (CNC) & manual lathes</li>
+            <li>CNC & manual mills</li>
+            <li>Auto band saw</li>
+            <li>Finishing equipment</li>
+            <li>
+              Various inspection tools to verify dimensions and tolerances
+            </li>
+          </ul>
         </div>
-        <div class="py-4 col-12 d-flex flex-xl-row flex-lg-row flex-column text-center align-items-center justify-content-center align-content-center align-items-center"
-            style="background-color: #EDF0F2;">
-            <h4 class="my-2 font-weight-lighter" style="color: #333333;">
-                <img class="pr-2" src="./images/setting.png" alt="icon">
-                Need a custom-machined fitting? Contact our team of experts.
-            </h4>
-            <button class="my-2 ml-5 border-primary bg-primary py-2 px-4 rounded" style="color:#ffffff;">
-                <a href="/" class="text-decoration-none  text-white">Contact Us</a>
-            </button>
-        </div>
-    </section>
+        <img
+          src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/al6xn-machining.jpg"
+          class="col-xl-6 col-lg-6 col-12 p-0 w-100"
+          alt=""
+        />
+      </div>
+      <div
+        class="py-4 col-12 d-flex flex-xl-row flex-lg-row flex-column text-center align-items-center justify-content-center align-content-center align-items-center"
+        style="background-color: #edf0f2"
+      >
+        <h4 class="my-2 font-weight-lighter" style="color: #333333">
+          <img class="pr-2" src="./images/setting.png" alt="icon" />
+          Need a custom-machined fitting? Contact our team of experts.
+        </h4>
 
+        <div class="my-xl-2 my-lg-2 my-0 ml-xl-5 ml-lg-5 ml-0">
+          <a
+            href="https://www.csidesigns.com/contact"
+            class="text-decoration-none"
+          >
+            <button type="button" class="btn btn-outline-primary py-2 px-4">
+              Contact Us
+            </button>
+          </a>
+        </div>
+
+        <!-- <button
+          class="my-2 ml-5 border-primary bg-primary py-2 px-4 rounded"
+          style="color: #ffffff"
+        >
+          <a href="/" class="text-decoration-none text-white">Contact Us</a>
+        </button> -->
+      </div>
+    </section>
 
     <!-- FINISHING -->
     <section class="mt-xl-5 mt-lg-5 mt-2 container pb-3">
-        <h1 style="color: #4081C6;" class="font-weight-light">FINISHING</h1>
-        <p style="color: #3C3F42;">
-            We are precise when polishing components to provide consistent, quality surface finish results. Central
-            States Industrial (CSI) takes a systematic approach to surface finishing, allowing us to provide consistent,
-            high quality results on your products. Our in-house polishing capabilities allow us to meet expedited
-            project schedules while maintaining product quality.
-        </p>
-        <div>
-            <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/csi-electropolishing-capabilities-strip.jpg"
-                alt="" style="width: 100%;">
+      <h1 style="color: #4081c6" class="font-weight-light">FINISHING</h1>
+      <p style="color: #3c3f42">
+        We are precise when polishing components to provide consistent, quality
+        surface finish results. Central States Industrial (CSI) takes a
+        systematic approach to surface finishing, allowing us to provide
+        consistent, high quality results on your products. Our in-house
+        polishing capabilities allow us to meet expedited project schedules
+        while maintaining product quality.
+      </p>
+      <div>
+        <img
+          src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/csi-electropolishing-capabilities-strip.jpg"
+          alt=""
+          style="width: 100%"
+        />
+      </div>
+      <div
+        class="mt-xl-5 mt-lg-5 mt-3 d-flex justify-content-center flex-xl-row flex-lg-column flex-column text-center"
+      >
+        <div class="text-left pr-4">
+          <h4 style="color: #3c3f42" class="font-weight-normal">
+            OUR EXPERIENCE WORKS FOR YOU
+          </h4>
+          <p style="color: #3c3f42" class="mt-3">
+            With over 50 years of experience in finishing components and
+            equipment, CSI is the leader in providing this service for the
+            sanitary process industry. We are actively involved in organizations
+            like 3-A and ASME BPE. Our active involvement allows us to
+            incorporate the latest standards into our surface finishing process
+            to meet the needs of our customers.
+          </p>
         </div>
-        <div
-            class="mt-xl-5 mt-lg-5 mt-3 d-flex justify-content-center flex-xl-row flex-lg-column flex-column text-center">
-            <div class="text-left pr-4">
-                <h4 style="color: #3C3F42;" class="font-weight-normal">
-                    OUR EXPERIENCE WORKS FOR YOU
-                </h4>
-                <p style="color: #3C3F42;" class="mt-3">
-                    With over 50 years of experience in finishing components and equipment, CSI is the leader in
-                    providing this service for the sanitary process industry. We are actively involved in organizations
-                    like 3-A and ASME BPE. Our active involvement allows us to incorporate the latest standards into our
-                    surface finishing process to meet the needs of our customers.
-                </p>
-            </div>
-            <div class="text-left pr-4">
-                <h4 style="color: #3C3F42;" class="font-weight-normal">
-                    CLEANLINESS IN MIND
-                </h4>
-                <p style="color: #3C3F42;" class="mt-3">
-                    Similar to our work stations, the polishing area at CSI is uniquely designed to be clean, safe, and
-                    efficient. The polishing department is in a separate area from our production area. The space has
-                    its own climate-controlled ventilation and filtration system that helps keep dust contained.
-                </p>
-            </div>
+        <div class="text-left pr-4">
+          <h4 style="color: #3c3f42" class="font-weight-normal">
+            CLEANLINESS IN MIND
+          </h4>
+          <p style="color: #3c3f42" class="mt-3">
+            Similar to our work stations, the polishing area at CSI is uniquely
+            designed to be clean, safe, and efficient. The polishing department
+            is in a separate area from our production area. The space has its
+            own climate-controlled ventilation and filtration system that helps
+            keep dust contained.
+          </p>
         </div>
-        <h5 class="border-start border-primary font-weight-normal" style="color: #4081C6;">
-            Every finished product goes through a detailed final inspection process to ensure it meets finish
-            specifications and dimensional tolerances.
-        </h5>
+      </div>
+      <h5
+        class="border-start border-primary font-weight-normal"
+        style="color: #4081c6"
+      >
+        Every finished product goes through a detailed final inspection process
+        to ensure it meets finish specifications and dimensional tolerances.
+      </h5>
     </section>
 
-    <section class="container  mt-2">
-        <div class="d-flex flex-lg-row dlex-lg-row flex-column" style="background-color: #3C3F42; color: #ffffff;">
-            <div class="col-xl-6 col-lg-6 col-12 text-left py-xl-5 py-lg-5 py-3 pl-xl-5 pl-lg-5 pl-4">
-                <h3 class="col-11 font-weight-light" style="color: #C1C1C1;">
-                    FINISHING TECHNIQUES
-                </h3>
-                <p class="col-11">
-                    We make the success of your project a priority at CSI. Our finishing experience helps us meet your
-                    quality requirements. </p>
-                <ul class="col-11">
-                    <li>
-                        Wide range of mechanical surface finishing
-                    </li>
-                    <li>
-                        Electropolish capability to less than 10 Ra (316L stainless steel)
-                    </li>
-                    <li>
-                        Glass bead blasting
-                    </li>
-                    <li>
-                        Finishing equipment
-                    </li>
-                    <li>
-                        Passivation capabilities utilizing citric acid
-                    </li>
+    <section class="container mt-2">
+      <div
+        class="d-flex flex-lg-row dlex-lg-row flex-column"
+        style="background-color: #3c3f42; color: #ffffff"
+      >
+        <div
+          class="col-xl-6 col-lg-6 col-12 text-left py-xl-5 py-lg-5 py-3 pl-xl-5 pl-lg-5 pl-4"
+        >
+          <h3 class="col-11 font-weight-light" style="color: #c1c1c1">
+            FINISHING TECHNIQUES
+          </h3>
+          <p class="col-11">
+            We make the success of your project a priority at CSI. Our finishing
+            experience helps us meet your quality requirements.
+          </p>
+          <ul class="col-11">
+            <li>Wide range of mechanical surface finishing</li>
+            <li>
+              Electropolish capability to less than 10 Ra (316L stainless steel)
+            </li>
+            <li>Glass bead blasting</li>
+            <li>Finishing equipment</li>
+            <li>Passivation capabilities utilizing citric acid</li>
 
-                    <li>
-                        Ultrasonic cleaning
-                    </li>
+            <li>Ultrasonic cleaning</li>
 
-                    <li>
-                        Surface finish checked with a profilometer for conformity to specifications
-                    </li>
-                </ul>
-            </div>
-            <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/polishing.jpg"
-                class="col-xl-6 col-lg-6 col-12 p-0 w-100" alt="">
+            <li>
+              Surface finish checked with a profilometer for conformity to
+              specifications
+            </li>
+          </ul>
         </div>
-        <div class="py-4 col-12 d-flex flex-xl-row flex-lg-row flex-column text-center align-items-center justify-content-center align-content-center align-items-center"
-            style="background-color: #EDF0F2;">
-            <h4 class="my-2 font-weight-lighter" style="color: #333333;">
-                <img class="pr-2" src="./images/setting.png" alt="icon">
-                Want to learn about finishing and polishing at
-                CSI?
-            </h4>
-            <button class="my-2 ml-5 border-primary bg-primary py-2 px-4 rounded" style="color:#ffffff;">
-                <a href="/" class="text-decoration-none  text-white">Contact Us</a>
+        <img
+          src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/polishing.jpg"
+          class="col-xl-6 col-lg-6 col-12 p-0 w-100"
+          alt=""
+        />
+      </div>
+      <div
+        class="py-4 col-12 d-flex flex-xl-row flex-lg-row flex-column text-center align-items-center justify-content-center align-content-center align-items-center"
+        style="background-color: #edf0f2"
+      >
+        <h4 class="my-2 font-weight-lighter" style="color: #333333">
+          <img class="pr-2" src="./images/setting.png" alt="icon" />
+          Want to learn about finishing and polishing at CSI?
+        </h4>
+
+        <div class="my-xl-2 my-lg-2 my-0 ml-xl-5 ml-lg-5 ml-0">
+          <a
+            href="https://www.csidesigns.com/contact"
+            class="text-decoration-none"
+          >
+            <button type="button" class="btn btn-outline-primary py-2 px-4">
+              Contact Us
             </button>
+          </a>
         </div>
+
+        <!-- <button
+          class="my-2 ml-5 border-primary bg-primary py-2 px-4 rounded"
+          style="color: #ffffff"
+        >
+          <a href="/" class="text-decoration-none text-white">Contact Us</a>
+        </button> -->
+      </div>
     </section>
     <!-- QUALITY INSPECTION -->
 
     <section class="mt-xl-5 mt-lg-5 mt-2 container pb-3">
-        <h1 style="color: #4081C6;" class="font-weight-light">QUALITY INSPECTION</h1>
-        <p style="color: #3C3F42;">
-            With our state-of-the-art, climate-controlled fabrication shop, inspection at CSI ensures components meet
-            industry standards for quality. We offer in-house, Level II inspection in accordance with the latest ASNT
-            recommended Practice No. SNT-TC-1A. This is a continuous process that occurs from the moment a project comes
-            into inspection, all the way through until the project is complete. Inspectors utilize the latest
-            quality-testing technologies including a Borescope, Niton gun, Profilometer, and Micrometers.
-        </p>
-        <div>
-            <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/CSI-Inspection-Capabilities-Banner.jpg" alt=""
-                style="width: 100%;">
-        </div>
+      <h1 style="color: #4081c6" class="font-weight-light">
+        QUALITY INSPECTION
+      </h1>
+      <p style="color: #3c3f42">
+        With our state-of-the-art, climate-controlled fabrication shop,
+        inspection at CSI ensures components meet industry standards for
+        quality. We offer in-house, Level II inspection in accordance with the
+        latest ASNT recommended Practice No. SNT-TC-1A. This is a continuous
+        process that occurs from the moment a project comes into inspection, all
+        the way through until the project is complete. Inspectors utilize the
+        latest quality-testing technologies including a Borescope, Niton gun,
+        Profilometer, and Micrometers.
+      </p>
+      <div>
+        <img
+          src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/CSI-Inspection-Capabilities-Banner.jpg"
+          alt=""
+          style="width: 100%"
+        />
+      </div>
 
+      <div
+        class="mt-xl-5 mt-lg-5 mt-3 d-flex justify-content-center flex-xl-row flex-lg-column flex-column text-center"
+      >
+        <div class="text-left pr-4">
+          <h4 style="color: #3c3f42" class="font-weight-normal">
+            RECEIVING INSPECTION
+          </h4>
+          <p style="color: #3c3f42" class="mt-3">
+            Before a component is ever welded onto a skid, it is inspected for
+            quality. Receiving inspection is the initial inspection that occurs
+            and encompasses every process contact component, which includes
+            tanks, pumps, valves, fittings, tubing, gaskets, and any other
+            equipment that has the potential to get wet.
+          </p>
+        </div>
+        <div class="text-left pr-4">
+          <h4 style="color: #3c3f42" class="font-weight-normal">
+            IN-PROCESS INSPECTION
+          </h4>
+          <p style="color: #3c3f42" class="mt-3">
+            As a skid is built, it is continuously monitored for quality.
+            Inspectors look at the spool pieces for dimensions, analyze welds,
+            and ensure the skid is constructed correctly. This process may also
+            include identification verification, pressure testing, and other
+            individualized inspection needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-xl-4 mt-xl-4 mt-lg-4 mt-2 row text-center">
         <div
-            class="mt-xl-5 mt-lg-5 mt-3 d-flex justify-content-center flex-xl-row flex-lg-column flex-column text-center">
-            <div class="text-left pr-4">
-                <h4 style="color: #3C3F42;" class="font-weight-normal">
-                    RECEIVING INSPECTION
-                </h4>
-                <p style="color: #3C3F42;" class="mt-3">
-                    Before a component is ever welded onto a skid, it is inspected for quality. Receiving inspection is
-                    the initial inspection that occurs and encompasses every process contact component, which includes
-                    tanks, pumps, valves, fittings, tubing, gaskets, and any other equipment that has the potential to
-                    get wet.
-                </p>
-            </div>
-            <div class="text-left pr-4">
-                <h4 style="color: #3C3F42;" class="font-weight-normal">
-                    IN-PROCESS INSPECTION
-                </h4>
-                <p style="color: #3C3F42;" class="mt-3">
-                    As a skid is built, it is continuously monitored for quality. Inspectors look at the spool pieces
-                    for dimensions, analyze welds, and ensure the skid is constructed correctly. This process may also
-                    include identification verification, pressure testing, and other individualized inspection needs.
-                </p>
-            </div>
+          class="col-xl-6 col-lg-6 col-12 d-flex flex-column justify-content-center text-center"
+        >
+          <h4 style="color: #3c3f42" class="text-left font-weight-normal">
+            FACTORY ACCEPTANCE TEST
+          </h4>
+          <p style="color: #3c3f42" class="text-left">
+            The final inspection that occurs is CSI’s factory acceptance test
+            (FAT). The inspector, the project manager, and the customer
+            typically run FAT testing. At this stage, the final equipment is
+            tested for functionality, the documentation is reviewed, and the
+            craftsmanship is scrutinized. In addition to any requirements the
+            customer requests, CSI completes its own standard testing to ensure
+            the finalized piece is compliant with all appropriate regulations.
+          </p>
+          <p style="color: #3c3f42" class="text-left">
+            Designed to be among the best in the industry, CSI’s FAT area
+            includes ample electrical power, clean steam, hot and cold water,
+            clean air, and more utilities are piped into a 200-square-foot
+            control room with an additional 750 square foot testing area.
+          </p>
         </div>
-
-        <div class="mt-xl-4 mt-xl-4 mt-lg-4 mt-2 row text-center">
-            <div class="col-xl-6 col-lg-6 col-12 d-flex flex-column justify-content-center text-center">
-                <h4 style="color: #3C3F42;" class="text-left font-weight-normal">FACTORY ACCEPTANCE TEST</h4>
-                <p style="color: #3C3F42;" class="text-left">
-                    The final inspection that occurs is CSI’s factory acceptance test (FAT). The inspector, the project
-                    manager, and the customer typically run FAT testing. At this stage, the final equipment is tested
-                    for functionality, the documentation is reviewed, and the craftsmanship is scrutinized. In addition
-                    to any requirements the customer requests, CSI completes its own standard testing to ensure the
-                    finalized piece is compliant with all appropriate regulations.
-                </p>
-                <p style="color: #3C3F42;" class="text-left">
-                    Designed to be among the best in the industry, CSI’s FAT area includes ample electrical power, clean
-                    steam, hot and cold water, clean air, and more utilities are piped into a 200-square-foot control
-                    room with an additional 750 square foot testing area.
-                </p>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-12">
-                <img src="https://s3.us-east-2.amazonaws.com/csi-imgix/banners/FAT-Room01.jpg" style="width: 100%;"
-                    alt="pic">
-            </div>
+        <div class="col-xl-6 col-lg-6 col-12">
+          <img
+            src="https://s3.us-east-2.amazonaws.com/csi-imgix/banners/FAT-Room01.jpg"
+            style="width: 100%"
+            alt="pic"
+          />
         </div>
+      </div>
     </section>
 
     <!-- above footer -->
-    <section style="background-color: #3C3F42;" class="container-fluid">
-        <div class="row pb-xl-0 pb-lg-0 pb-4">
-            <div class="h-auto col-xl-6 col-lg-6 col-12 d-flex justify-content-end text-center">
-                <img class="col-xl-8 col-lg-8 col-12 h-100"
-                    src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/fabrication-footer-cta.png" alt="">
-            </div>
-            <div
-                class="col-xl-6 col-lg-6 col-12 text-left d-flex flex-column align-items-start justify-content-center text-left">
-                <h2 class="mt-xl-0 mt-lg-0 mt-4" style="color: #ffffff;">
-                    Have a fabrication question?
-                </h2>
-                <p class="w-75" style="color: #606875;">
-                    Speak with our team of experts to learn how CSI Fabrication can provide your next solution.
-                </p>
-                <div>
-                    <button class="py-1 px-4 border-white" style="background-color: #3C3F42; color: #ffffff;"
-                        class="py-1 px-4 rounded">
-                        Contact Us
-                    </button>
-                </div>
-            </div>
+    <section style="background-color: #3c3f42" class="container-fluid">
+      <div class="row pb-xl-0 pb-lg-0 pb-4">
+        <div
+          class="h-auto col-xl-6 col-lg-6 col-12 d-flex justify-content-end text-center"
+        >
+          <img
+            class="col-xl-8 col-lg-8 col-12 h-100"
+            src="https://s3.us-east-2.amazonaws.com/csi-imgix/misc/fabrication-footer-cta.png"
+            alt=""
+          />
         </div>
-
+        <div
+          class="col-xl-6 col-lg-6 col-12 text-left d-flex flex-column align-items-start justify-content-center text-left"
+        >
+          <h2 class="mt-xl-0 mt-lg-0 mt-4" style="color: #ffffff">
+            Have a fabrication question?
+          </h2>
+          <p class="w-75" style="color: #606875">
+            Speak with our team of experts to learn how CSI Fabrication can
+            provide your next solution.
+          </p>
+          <div>
+            <div class="my-xl-2 my-lg-2 my-md-2 my-0 ml-xl-5 ml-lg-5 ml-0">
+              <a
+                href="https://www.csidesigns.com/contact"
+                class="text-decoration-none"
+              >
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary py-2 px-4"
+                >
+                  Contact Us
+                </button>
+              </a>
+            </div>
+            <!-- <button
+              class="py-1 px-4 border-white"
+              style="background-color: #3c3f42; color: #ffffff"
+              class="py-1 px-4 rounded"
+            >
+              Contact Us
+            </button> -->
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer class="d-flex flex-xl-row flex-lg-row flex-column justify-content-center text-center"
-        style="border-top: 1px solid #858789;">
-        <div class="pt-xl-5 pt-lg-5 pt-2 col-xl-4 col-lg-4 col-12 d-flex justify-content-center text-left text-white"
-            style="background-color: #3C3F42;">
-            <div class="col-12">
-                <a href="https://www.csidesigns.com/">
-                    <img src="./images/logo.png" alt="">
-                </a>
-                <h4 class="mt-4">Central States Industrial</h4>
-                <p class="mt-4" style="color: #bcc3c9;">Headquarters </p>
-                <p>
-                    2700 N Partnership Blvd <br />
-                    Springfield, MO 65803-8208
-                </p>
-                <p>
-                    <span class="col-6" style="color: #bcc3c9;">Toll Free</span>
-                    <span class="col-6">
-                        <a style="color: #ffffff;" class="footer-hover" href="tel:8006545635">
-                            8006545635
-                        </a>
-                    </span>
-                </p>
-                <p>
-                    <span class="col-6" style="color: #bcc3c9;">Main</span>
-                    <span class="col-6">
-                        <a style="color: #ffffff;" class="footer-hover" href="tel:4178311411">
-                            4178311411
-                        </a>
-                    </span>
-                </p>
-                <p>
-                    <span class="col-6" style="color: #bcc3c9;">Hours</span>
-                    <span class="col-6">7AM-5:30PM CT Mon-Fri</span>
-                </p>
-                <p class="footer-hover cursor-pointer">
-                    <a style="color: #ffffff;" href="https://www.csidesigns.com/locations/springfield">
-                        View All Locations
-                    </a>
-                </p>
-            </div>
+    <footer
+      class="d-flex flex-xl-row flex-lg-row flex-column justify-content-center text-center"
+      style="border-top: 1px solid #858789"
+    >
+      <div
+        class="pt-xl-5 pt-lg-5 pt-2 col-xl-4 col-lg-4 col-12 d-flex justify-content-center text-left text-white"
+        style="background-color: #3c3f42"
+      >
+        <div class="col-12">
+          <a href="https://www.csidesigns.com/">
+            <img src="./images/logo.png" alt="" />
+          </a>
+          <h4 class="mt-4">Central States Industrial</h4>
+          <p class="mt-4" style="color: #bcc3c9">Headquarters</p>
+          <p>
+            2700 N Partnership Blvd <br />
+            Springfield, MO 65803-8208
+          </p>
+          <p>
+            <span class="col-6" style="color: #bcc3c9">Toll Free</span>
+            <span class="col-6">
+              <a
+                style="color: #ffffff"
+                class="footer-hover"
+                href="tel:8006545635"
+              >
+                8006545635
+              </a>
+            </span>
+          </p>
+          <p>
+            <span class="col-6" style="color: #bcc3c9">Main</span>
+            <span class="col-6">
+              <a
+                style="color: #ffffff"
+                class="footer-hover"
+                href="tel:4178311411"
+              >
+                4178311411
+              </a>
+            </span>
+          </p>
+          <p>
+            <span class="col-6" style="color: #bcc3c9">Hours</span>
+            <span class="col-6">7AM-5:30PM CT Mon-Fri</span>
+          </p>
+          <p class="footer-hover cursor-pointer">
+            <a
+              style="color: #ffffff"
+              href="https://www.csidesigns.com/locations/springfield"
+            >
+              View All Locations
+            </a>
+          </p>
         </div>
-        <div class="col-xl-8 col-lg-8 col-12" style="background-color: #4A4D51;">
-            <div class="d-flex justify-content-between col-xl-10 col-lg-12 col-12 pt-xl-5 pt-lg-5 pt-4 pb-3"
-                style="color: #bcc3c9;">
-                <div class="text-left">
-                    <h4 class="text-white mb-3 underline_hover">
-                        <a style="color: #ffffff;" href="https://www.csidesigns.com/industries"
-                            class="cursor-pointer footer-hover">INDUSTRIES</a>
-                    </h4>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/industries/processed-foods"
-                            class="cursor-pointer footer-hover">PROCESSED FOODS</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/industries/high-acid-foods"
-                            class="cursor-pointer footer-hover">HIGH-ACID FOODS</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/industries/dairy"
-                            class="cursor-pointer footer-hover">DAIRY</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/industries/beverages"
-                            class="cursor-pointer footer-hover">BEVERAGES</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/industries/brewery"
-                            class="cursor-pointer footer-hover">BREWERY</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/industries/home-personal-care"
-                            class="cursor-pointer footer-hover">HOME & PERSONAL CARE</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/industries/pharmaceutical"
-                            class="cursor-pointer footer-hover">PHARMACEUTICAL</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/industries/biotech"
-                            class="cursor-pointer footer-hover">BIOTECH</a>
-                    </p>
+      </div>
+      <div class="col-xl-8 col-lg-8 col-12" style="background-color: #4a4d51">
+        <div
+          class="d-flex justify-content-between col-xl-10 col-lg-12 col-12 pt-xl-5 pt-lg-5 pt-4 pb-3"
+          style="color: #bcc3c9"
+        >
+          <div class="text-left pr-xl-2 pr-lg-2">
+            <h4 class="text-white mb-3 underline_hover">
+              <a
+                style="color: #ffffff"
+                href="https://www.csidesigns.com/industries"
+                class="cursor-pointer footer-hover"
+                >INDUSTRIES</a
+              >
+            </h4>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/industries/processed-foods"
+                class="cursor-pointer footer-hover"
+                >PROCESSED FOODS</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/industries/high-acid-foods"
+                class="cursor-pointer footer-hover"
+                >HIGH-ACID FOODS</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/industries/dairy"
+                class="cursor-pointer footer-hover"
+                >DAIRY</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/industries/beverages"
+                class="cursor-pointer footer-hover"
+                >BEVERAGES</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/industries/brewery"
+                class="cursor-pointer footer-hover"
+                >BREWERY</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/industries/home-personal-care"
+                class="cursor-pointer footer-hover"
+                >HOME & PERSONAL CARE</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/industries/pharmaceutical"
+                class="cursor-pointer footer-hover"
+                >PHARMACEUTICAL</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/industries/biotech"
+                class="cursor-pointer footer-hover"
+                >BIOTECH</a
+              >
+            </p>
 
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/industries/chemical"
-                            class="cursor-pointer footer-hover">CHEMICAL</a>
-                    </p>
-                </div>
-                <div class="text-left display_none">
-                    <h4 class="text-white mb-3 underline_hover">
-                        <a style="color: #ffffff;" href="https://www.csidesigns.com/products"
-                            class="cursor-pointer footer-hover">PRODUCTS</a>
-                    </h4>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/pumps" class="cursor-pointer footer-hover">PUMP
-                            SOLUTIONS</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/valve-systems" class="cursor-pointer footer-hover">
-                            VALVE SYSTEMST</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/tote-solutions"
-                            class="cursor-pointer footer-hover">TOTE SOLUTIONS</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/heat-exchangers"
-                            class="cursor-pointer footer-hover"> HEAT EXCHANGE</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/mixing-heat-transfer"
-                            class="cursor-pointer footer-hover"> MIXING & INGREDIENT ADDITION</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/cleaning-systems"
-                            class="cursor-pointer footer-hover"> CLEANING SYSTEMS</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/piping-accessories"
-                            class="cursor-pointer footer-hover"> TUBING, FITTINGS, & HANGERS</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/piping-accessories/pipetite"
-                            class="cursor-pointer footer-hover"> PIPETITE®</a>
-                    </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/industries/chemical"
+                class="cursor-pointer footer-hover"
+                >CHEMICAL</a
+              >
+            </p>
+          </div>
+          <div class="text-left display_none">
+            <h4 class="text-white mb-3 underline_hover">
+              <a
+                style="color: #ffffff"
+                href="https://www.csidesigns.com/products"
+                class="cursor-pointer footer-hover"
+                >PRODUCTS</a
+              >
+            </h4>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/pumps"
+                class="cursor-pointer footer-hover"
+                >PUMP SOLUTIONS</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/valve-systems"
+                class="cursor-pointer footer-hover"
+              >
+                VALVE SYSTEMST</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/tote-solutions"
+                class="cursor-pointer footer-hover"
+                >TOTE SOLUTIONS</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/heat-exchangers"
+                class="cursor-pointer footer-hover"
+              >
+                HEAT EXCHANGE</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/mixing-heat-transfer"
+                class="cursor-pointer footer-hover"
+              >
+                MIXING & INGREDIENT ADDITION</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/cleaning-systems"
+                class="cursor-pointer footer-hover"
+              >
+                CLEANING SYSTEMS</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/piping-accessories"
+                class="cursor-pointer footer-hover"
+              >
+                TUBING, FITTINGS, & HANGERS</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/piping-accessories/pipetite"
+                class="cursor-pointer footer-hover"
+              >
+                PIPETITE®</a
+              >
+            </p>
 
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/piping-accessories/installation-supplies"
-                            class="cursor-pointer footer-hover"> INSTALLATION MATERIALS</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/piping-accessories/filters-strainers"
-                            class="cursor-pointer footer-hover"> FILTERS & STRAINERS</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/instrumentation"
-                            class="cursor-pointer footer-hover"> INSTRUMENTATION</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/products/superalloys" class="cursor-pointer footer-hover">
-                            CORROSION-RESISTANT SUPER ALLOYS™</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/spare-parts-finder" class="cursor-pointer footer-hover">
-                            SPARE PARTS</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/custom-equipment" class="cursor-pointer footer-hover">CUSTOM
-                            EQUIPMENT</a>
-                    </p>
-                </div>
-                <div class="text-left display_none">
-                    <h4 class="text-white mb-3 underline_hover">
-                        <a style="color: #ffffff;"
-                            href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities"
-                            class="cursor-pointer footer-hover">CAPABILITIES</a>
-                    </h4>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/process-engineering"
-                            class="cursor-pointer footer-hover">ENGINEERING</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/design"
-                            class="cursor-pointer footer-hover">DESIGN</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/fabrication"
-                            class="cursor-pointer footer-hover">
-                            FABRICATION</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/installation"
-                            class="cursor-pointer footer-hover">INSTALLATION</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/commissioning"
-                            class="cursor-pointer footer-hover">COMMISSIONING</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/service-maintenance"
-                            class="cursor-pointer footer-hover">SERVICE & MAINTENANCE</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/pump-repair"
-                            class="cursor-pointer footer-hover">PUMP REPAIR</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/refrigeration"
-                            class="cursor-pointer footer-hover">INDUSTRIAL REFRIGERATION</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/contact/report-a-problem"
-                            class="cursor-pointer footer-hover">REPORT A PROBLEM</a>
-                    </p>
-                    <p class="cursor-pointer footer-hover">
-                        <a href="https://www.csidesigns.com/sitemap" class="cursor-pointer footer-hover">SITEMAP</a>
-                    </p>
-                </div>
-            </div>
-            <div class="d-flex flex-xl-row flex-lg-row flex-column-reverse col-xl-10 col-lg-10 col-12 py-3 justify-content-between"
-                style="border-top: 2px solid #bcc3c9;">
-                <div class="text-left col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12" style="color: #bcc3c9;">
-                    <p><span>© 2023 Central States Industrial</span> |
-                        <a href="https://www.csidesigns.com/legal" class="footer-hover">Legal</a> |
-                        <a href="https://www.csidesigns.com/contact" class="footer-hover"> Contact Us</a>
-                    </p>
-                    <p>
-                        <a href="https://www.csidesigns.com/privacy-policy" class="footer-hover">Privacy Policy</a> |
-                        <a href="https://www.csidesigns.com/cookie-policy" class="footer-hover">Cookie Policy</a> |
-                        <a href="https://www.csidesigns.com/terms-of-use" class="footer-hover">Terms of Use</a>
-                    </p>
-                </div>
-
-                <div class="d-flex justify-content-between col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
-                    <p>
-                        <a href="https://www.facebook.com/csidesigns">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                                class="bi bi-facebook text-white cursor-pointer" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-                        </a>
-
-                    </p>
-                    <p>
-                        <a href="http://twitter.com/csidesigns">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                                class="bi bi-twitter text-white cursor-pointer" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                            </svg>
-                        </a>
-
-                    </p>
-                    <p>
-                        <a href="https://www.youtube.com/user/csidesigns">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                                class="bi bi-youtube text-white cursor-pointer" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                            </svg>
-                        </a>
-
-                    </p>
-                    <p>
-                        <a href="http://www.linkedin.com/company/central-states-industrial-csi-">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                                class="bi bi-linkedin text-white cursor-pointer" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                            </svg>
-                        </a>
-
-                    </p>
-                    <p>
-                        <a href="https://www.instagram.com/centralstatesindustrial/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                                class="bi bi-instagram text-white cursor-pointer" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                            </svg>
-                        </a>
-
-                    </p>
-                </div>
-            </div>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/piping-accessories/installation-supplies"
+                class="cursor-pointer footer-hover"
+              >
+                INSTALLATION MATERIALS</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/piping-accessories/filters-strainers"
+                class="cursor-pointer footer-hover"
+              >
+                FILTERS & STRAINERS</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/instrumentation"
+                class="cursor-pointer footer-hover"
+              >
+                INSTRUMENTATION</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/products/superalloys"
+                class="cursor-pointer footer-hover"
+              >
+                CORROSION-RESISTANT SUPER ALLOYS™</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/spare-parts-finder"
+                class="cursor-pointer footer-hover"
+              >
+                SPARE PARTS</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/custom-equipment"
+                class="cursor-pointer footer-hover"
+                >CUSTOM EQUIPMENT</a
+              >
+            </p>
+          </div>
+          <div class="text-left display_none">
+            <h4 class="text-white mb-3 underline_hover">
+              <a
+                style="color: #ffffff"
+                href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities"
+                class="cursor-pointer footer-hover"
+                >CAPABILITIES</a
+              >
+            </h4>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/process-engineering"
+                class="cursor-pointer footer-hover"
+                >ENGINEERING</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/design"
+                class="cursor-pointer footer-hover"
+                >DESIGN</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/fabrication"
+                class="cursor-pointer footer-hover"
+              >
+                FABRICATION</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/installation"
+                class="cursor-pointer footer-hover"
+                >INSTALLATION</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/commissioning"
+                class="cursor-pointer footer-hover"
+                >COMMISSIONING</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/service-maintenance"
+                class="cursor-pointer footer-hover"
+                >SERVICE & MAINTENANCE</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/pump-repair"
+                class="cursor-pointer footer-hover"
+                >PUMP REPAIR</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/refrigeration"
+                class="cursor-pointer footer-hover"
+                >INDUSTRIAL REFRIGERATION</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/contact/report-a-problem"
+                class="cursor-pointer footer-hover"
+                >REPORT A PROBLEM</a
+              >
+            </p>
+            <p class="cursor-pointer footer-hover">
+              <a
+                href="https://www.csidesigns.com/sitemap"
+                class="cursor-pointer footer-hover"
+                >SITEMAP</a
+              >
+            </p>
+          </div>
         </div>
+        <div
+          class="d-flex flex-xl-row flex-lg-row flex-column-reverse col-xl-10 col-lg-10 col-12 py-3 justify-content-between"
+          style="border-top: 2px solid #bcc3c9"
+        >
+          <div
+            class="text-left col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12"
+            style="color: #bcc3c9"
+          >
+            <p>
+              <span>© 2023 Central States Industrial</span> |
+              <a href="https://www.csidesigns.com/legal" class="footer-hover"
+                >Legal</a
+              >
+              |
+              <a href="https://www.csidesigns.com/contact" class="footer-hover">
+                Contact Us</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.csidesigns.com/privacy-policy"
+                class="footer-hover"
+                >Privacy Policy</a
+              >
+              |
+              <a
+                href="https://www.csidesigns.com/cookie-policy"
+                class="footer-hover"
+                >Cookie Policy</a
+              >
+              |
+              <a
+                href="https://www.csidesigns.com/terms-of-use"
+                class="footer-hover"
+                >Terms of Use</a
+              >
+            </p>
+          </div>
+
+          <div
+            class="d-flex justify-content-between col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12"
+          >
+            <p>
+              <a href="https://www.facebook.com/csidesigns">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-facebook text-white cursor-pointer"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+              </a>
+            </p>
+            <p>
+              <a href="http://twitter.com/csidesigns">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-twitter text-white cursor-pointer"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+              </a>
+            </p>
+            <p>
+              <a href="https://www.youtube.com/user/csidesigns">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-youtube text-white cursor-pointer"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  />
+                </svg>
+              </a>
+            </p>
+            <p>
+              <a
+                href="http://www.linkedin.com/company/central-states-industrial-csi-"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-linkedin text-white cursor-pointer"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/centralstatesindustrial/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-instagram text-white cursor-pointer"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
