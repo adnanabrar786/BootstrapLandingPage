@@ -49,12 +49,9 @@
         cursor: pointer;
         background-color: #4081c6;
       }
-      /* .card_hover:hover > div {
-            color: #ffffff;
-        } */
 
       .card_hover h5 {
-        color: #ffffff;
+        /* color: #ffffff; */
         color: #4081c6;
       }
 
@@ -80,7 +77,25 @@
         text-decoration: underline;
       }
 
+      .my_header {
+        display: flex;
+        justify-content: center;
+      }
+
+      .resposnive_header {
+        display: none;
+      }
+
       @media only screen and (max-width: 992px) {
+        .my_header {
+          display: none;
+        }
+
+        .resposnive_header {
+          display: flex;
+          justify-content: center;
+        }
+
         .banner_text {
           font-size: 35px;
           padding-left: 5%;
@@ -110,19 +125,127 @@
         </p>
       </div>
     </section>
-    <!--     
-    <header class="d-flex justify-content-center" style="background-color: #EDF0F2; border-top:7px solid #4081C6;">
-        <div class="pt-4 pb-2 d-flex justify-content-between align-items-center col-8">
-            <p class="text-primary"><a href="/">Engineering</a></p>
-            <p class="text-primary"><a href="/">Design</a></p>
-            <p class="text-primary"><a href="/">Fabrication</a></p>
-            <p class="text-primary"><a href="/">Installation</a></p>
-            <p class="text-primary"><a href="/">Commissioning</a></p>
-            <p class="text-primary"><a href="/">Service & Maintenance</a></p>
-            <p class="text-primary"><a href="/">Pump Repair</a></p>
-            <p class="text-primary"><a href="/">Industrial Refrigeration</a></p>
-        </div>
-    </header> -->
+
+    <header
+      class="my_header"
+      style="background-color: #edf0f2; border-top: 7px solid #4081c6"
+    >
+      <div
+        class="py-4 d-flex justify-content-between align-items-center col-xl-10 col-lg-11"
+      >
+        <a
+          style="border-right: 1px solid #8a8b8b"
+          href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/process-engineering"
+          class="pr-xl-2 pr-lg-1"
+          >Engineering
+        </a>
+        <a
+          style="border-right: 1px solid #8a8b8b"
+          href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/design"
+          class="pr-xl-2 pr-lg-1"
+          >Design</a
+        >
+        <a
+          style="border-right: 1px solid #8a8b8b"
+          href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/fabrication"
+          class="pr-xl-2 pr-lg-1"
+          >Fabrication</a
+        >
+        <a
+          style="border-right: 1px solid #8a8b8b"
+          href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/installation"
+          class="pr-xl-2 pr-lg-1"
+          >Installation</a
+        >
+        <a
+          style="border-right: 1px solid #8a8b8b"
+          href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/commissioning"
+          class="pr-xl-2 pr-lg-1"
+          >Commissioning</a
+        >
+        <a
+          style="border-right: 1px solid #8a8b8b"
+          href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/service-maintenance"
+          class="pr-xl-2 pr-lg-1"
+          >Service & Maintenance</a
+        >
+        <a
+          style="border-right: 1px solid #8a8b8b"
+          href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/pump-repair"
+          class="pr-xl-2 pr-lg-1"
+          >Pump Repair</a
+        >
+        <a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/refrigeration">Industrial Refrigeration</a>
+      </div>
+    </header>
+
+    <!-- responsive -->
+    <header
+      class="py-3 resposnive_header"
+      style="background-color: #edf0f2"
+    >
+      <!-- <select class="w-100 " name="forma" id="SelectOption">
+        <option value="Home"><a href="home.php">Home</a></option>
+        <option value="Contact"><a href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/fabrication">Contact a</a></option>
+        <option value="Sitemap"><a href="sitemap.php">Sitemap</a></option>
+      </select> -->
+      <select
+        class="col-10 w-100 py-1 cursor-pointer border border-0 rounded"
+        name="forma"
+        onchange="location = this.value;"
+        style="background-color: #ffffff; outline: none;"
+      >
+        <option
+          style="background-color: #edf0f2; color: #4081c6"
+          class="cursor-pointer"
+          value="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/design"
+        >
+          Design
+        </option>
+        <option
+          style="background-color: #edf0f2; color: #4081c6"
+          class="cursor-pointer"
+          value="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/fabrication"
+        >
+          Fabrication
+        </option>
+        <option
+          style="background-color: #edf0f2; color: #4081c6"
+          class="cursor-pointer"
+          value="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/installation"
+        >
+          Installation
+        </option>
+        <option
+          style="background-color: #edf0f2; color: #4081c6"
+          class="cursor-pointer"
+          value="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/commissioning"
+        >
+          Commissioning
+        </option>
+        <option
+          style="background-color: #edf0f2; color: #4081c6"
+          class="cursor-pointer"
+          value="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/service-maintenance"
+        >
+          Service & Maintenance
+        </option>
+        <option
+          style="background-color: #edf0f2; color: #4081c6"
+          class="cursor-pointer"
+          value="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/pump-repair"
+        >
+          Pump Repair
+        </option>
+        <option
+          style="background-color: #edf0f2; color: #4081c6"
+          class="cursor-pointer"
+          value="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/refrigeration"
+        >
+          Industrial Refrigeration
+        </option>
+      </select>
+    </header>
 
     <section class="py-5" style="background-color: #f8f8f8">
       <h3
@@ -1290,5 +1413,28 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document
+        .getElementById("SelectOption")
+        .addEventListener("change", function () {
+          val = $("#SelectOption").val();
+
+          console.log(val);
+          if (val === "Home") {
+            window.open(
+              "https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/design",
+              "_blank"
+            );
+          }
+          if (val === "Contact") {
+            // window.open("contact.php");
+            window.open("contact.php");
+          }
+          if (val === "Sitemap") {
+            window.open("sitemap.php", "_blank");
+          }
+        });
+    </script>
   </body>
 </html>
