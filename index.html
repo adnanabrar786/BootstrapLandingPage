@@ -19,10 +19,12 @@
     />
 
     <!--Get your code at fontawesome.com-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- flat icon -->
+    <!-- <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"> -->
 
     <style>
       * {
@@ -55,6 +57,17 @@
       .card_hover:hover {
         cursor: pointer;
         background-color: #4081c6;
+      }
+
+      .card_hover:hover .black_machine {
+        display: none;
+      }
+      .white_machine {
+        display: none;
+      }
+
+      .card_hover:hover .white_machine {
+        display: block;
       }
 
       .card_hover h5 {
@@ -159,7 +172,7 @@
           class="pr-xl-3 pr-lg-1"
           >Fabrication</a
         >
-        
+
         <a
           style="border-right: 1px solid #8a8b8b"
           href="https://www.csidesigns.com/company/hygienic-fluid-handling-capabilities/installation"
@@ -270,8 +283,17 @@
             <a href="#Welding_para" style="text-decoration: none">
               <div class="card border border-0 rounded">
                 <div class="mt-xl-0 mt-lg-0 mt-2 mx-1 py-4 rounded card_hover">
-                  <div>
-                    <img class="col-4" src="./images/welding.png" alt="pic" />
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="col-4 black_machine"
+                      src="./images/black_welding.png"
+                      alt="pic"
+                    />
+                    <img
+                      class="col-4 white_machine"
+                      src="./images/white_welding.png"
+                      alt="pic"
+                    />
                   </div>
                   <h5 class="mt-3">Welding</h5>
                 </div>
@@ -283,8 +305,17 @@
             <a href="#Machining_para" style="text-decoration: none">
               <div class="card border border-0 rounded">
                 <div class="mt-xl-0 mt-lg-0 mt-2 mx-1 py-4 rounded card_hover">
-                  <div>
-                    <img class="col-4" src="./images/machine.png" alt="pic" />
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="col-4 black_machine"
+                      src="./images/black_machine.png"
+                      alt="pic"
+                    />
+                    <img
+                      class="col-4 white_machine"
+                      src="./images/white_machine.png"
+                      alt="pic"
+                    />
                   </div>
                   <h5 class="mt-3">Machining</h5>
                 </div>
@@ -296,8 +327,17 @@
             <a href="#Finishing_para" style="text-decoration: none">
               <div class="card border border-0 rounded">
                 <div class="mt-xl-0 mt-lg-0 mt-2 mx-1 py-4 rounded card_hover">
-                  <div>
-                    <img class="col-4" src="./images/finishing.png" alt="pic" />
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="col-4 black_machine"
+                      src="./images/finishing_black.png"
+                      alt="pic"
+                    />
+                    <img
+                      class="col-4 white_machine"
+                      src="./images/finishing_white.png"
+                      alt="pic"
+                    />
                   </div>
                   <h5 class="mt-3">Finishing</h5>
                 </div>
@@ -309,10 +349,15 @@
             <a href="#Inspection_para" style="text-decoration: none">
               <div class="card border border-0 rounded">
                 <div class="mt-xl-0 mt-lg-0 mt-2 mx-1 py-4 rounded card_hover">
-                  <div>
+                  <div class="d-flex justify-content-center">
                     <img
-                      class="col-4"
-                      src="./images/inspection.png"
+                      class="col-4 black_machine"
+                      src="./images/black_inspection.png"
+                      alt="pic"
+                    />
+                    <img
+                      class="col-4 white_machine"
+                      src="./images/white_inspection.png"
                       alt="pic"
                     />
                   </div>
@@ -1422,7 +1467,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
+    <!-- 
     <script>
       document
         .getElementById("SelectOption")
@@ -1444,6 +1489,6 @@
             window.open("sitemap.php", "_blank");
           }
         });
-    </script>
+    </script> -->
   </body>
 </html>
